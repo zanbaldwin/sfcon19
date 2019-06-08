@@ -1,0 +1,23 @@
+{
+    "name": "zanbaldwin/dpc19",
+    "description": "Implementation of Autoloader Overloading from DPC19 Talk",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zan Baldwin",
+            "email": "hello@zanbaldwin.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZanBaldwin\\DPC19\\Obfuscation\\": "lib/",
+            "ZanBaldwin\\DPC19\\App\\": "src/"
+        }
+    },
+    "bin":["bin/obfuscate"]
+}

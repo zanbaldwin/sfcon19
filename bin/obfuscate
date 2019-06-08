@@ -1,0 +1,27 @@
+#!/usr/bin/env php
+<?php declare(strict_types=1);
+
+use ZanBaldwin\DPC19\Obfuscation\ObfuscatingTransformFilter;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+array_shift($argv);
+
+$obfuscate = true;
+$files = [];
+
+foreach ($argv as $arg) {
+    if ($arg === '--undo') {
+        $obfuscate = false;
+    } elseif (file_exists($arg)) {
+        $files[] = $arg;
+    }
+}
+
+$method = $obfuscate ? 'encrypt' : 'decrypt';
+$obfuscator = new ObfuscatingTransformFilter;
+
+foreach ($files as $file) {
+    echo sprintf('%s source files "%s".', $obfuscate ? 'Encrypting' : 'Decrypting', $file) . PHP_EOL;
+    file_put_contents($file, $obfuscator->{$method}(file_get_contents($file)));
+}
