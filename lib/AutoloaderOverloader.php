@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace ZanBaldwin\DPC19\Obfuscation;
+namespace ZanBaldwin\SfCon19\Obfuscation;
 
 use Composer\Autoload\ClassLoader as ComposerClassLoader;
 

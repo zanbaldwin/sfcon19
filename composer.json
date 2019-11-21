@@ -1,6 +1,6 @@
 {
-    "name": "zanbaldwin/dpc19",
-    "description": "Implementation of Autoloader Overloading from DPC19 Talk",
+    "name": "zanbaldwin/sfcon19",
+    "description": "Implementation of Autoloader Overloading from SfCon19 Talk",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -15,8 +15,8 @@
     },
     "autoload": {
         "psr-4": {
-            "ZanBaldwin\\DPC19\\Obfuscation\\": "lib/",
-            "ZanBaldwin\\DPC19\\App\\": "src/"
+            "ZanBaldwin\\SfCon19\\Obfuscation\\": "lib/",
+            "ZanBaldwin\\SfCon19\\App\\": "src/"
         }
     },
     "bin":["bin/obfuscate"]

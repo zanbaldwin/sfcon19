@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php declare(strict_types=1);
 
-use ZanBaldwin\DPC19\Obfuscation\ObfuscatingTransformFilter;
+use ZanBaldwin\SfCon19\Obfuscation\ObfuscatingTransformFilter;
 
 require __DIR__ . '/../vendor/autoload.php';
 
