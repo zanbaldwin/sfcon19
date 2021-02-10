@@ -1,3 +1,5 @@
+Original Presentation:<br>https://docs.google.com/presentation/d/1cTDYd4tNHH37MKbNEm1jqdMW-NcqaVU2MLIsUWtCs7k/edit?usp=sharing
+
 # Obfuscation Demo
 
 This is a demo application using concepts covered in [my talk for SymfonyCon Amsterdam 2019][talk]: [autoloader
